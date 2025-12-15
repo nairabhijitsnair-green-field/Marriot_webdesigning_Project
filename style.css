@@ -1,20 +1,34 @@
-:root{
-    --main-heading-size:2.5rem;
+:root {
+    --main-heading-size: 2.5rem;
 }
-.header-main{
+
+.header-main {
     background-color: aqua;
     position: relative;
 }
-.bar-col{
+
+.bar-col {
     background-color: rgba(0, 0, 0, 0);
 }
-.nav-bar{
+
+.nav-bar {
     background-color: rgba(0, 0, 0, 0.5);
 }
-.header-text-small{
+
+.header-text-small {
     font-size: 0.7rem !important;
 }
-body{
+
+.date-bar::-webkit-calendar-picker-indicator {
+    background: transparent;
+}
+
+.main-island {
+    width: 100%;
+    top: 120px;
+}
+
+body {
     overflow-x: hidden;
 }
 
@@ -22,24 +36,57 @@ body{
 
 
 @media screen {
-    
-    .header-heading{
-        top: 600px;
-        left: 50px;
+    .island {
+        width: 95vw;
+        height: 75px;
+        background-color: white;
+        top: 120px;
+        border-radius: 15px;
+    }
+    .destination-div1 {
+        font-size: 0.8em;
+        padding-top: 5px;
+    }
+
+    .destination-div2 {
+        font-size: 0.8em;
+        padding-left: 40px;
+    }
+
+    .dropdown-text {
+        font-size: large !important;
+        font-weight: 500 !important;
+    }
+
+    .date-bar {
+        width: 200px !important;
+        font-size: large !important;
+        border-style: none !important;
+        font-weight: 500 !important;
+    }
+
+    .island-btn-dark {
+        display: none !important;
+    }
+
+    .header-heading {
+        top: 80%;
+        left: 8%;
         font-weight: 700;
         font-size: 2.2rem;
         font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
     }
-    .header-text{
-        top: 660px;
-        left: 50px;
+
+    /* following are positioned to .header-heading */
+    .header-text {
+        margin-top: -10px;
         font-weight: 500;
         font-size: 1rem;
         font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
     }
-    .header-btn{
-        top: 700px;
-        left: 50px;
+
+    .header-btn {
+        margin-top: 15px;
         width: 100px;
         height: 30px !important;
         padding-bottom: 20px !important;
@@ -47,27 +94,64 @@ body{
         font-size: small !important;
         font-weight: 500 !important;
     }
-    
+
 }
+
 @media screen and (min-width:768px) {
-    
-    .header-heading{
-        top: 200px;
-        left: 140px;
+    .island {
+        width: 80vw;
+        height: 75px;
+        background-color: white;
+        top: 120px;
+        border-radius: 15px;
+    }
+    .destination-div1 {
+        font-size: 0.8em;
+        padding-top: 5px;
+    }
+
+    .destination-div2 {
+        font-size: 0.8em;
+        padding-left: 40px;
+        padding-top: 5px;
+    }
+
+    .dropdown-text {
+        font-size: large !important;
+        font-weight: 500 !important;
+    }
+
+    .date-bar {
+        width: 150px !important;
+        font-size: large !important;
+        border-style: none !important;
+        font-weight: 500 !important;
+    }
+
+    .island-btn-dark {
+        display: none !important;
+    }
+
+    .header-heading {
+        top: 50%;
+        left: 10%;
         font-weight: 700;
         font-size: 2.2rem;
         font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
     }
-    .header-text{
-        top: 260px;
-        left: 140px;
+
+    /* following are positioned to .header-heading */
+    .header-text {
+        top: 67%;
+        margin-top: 15px;
         font-weight: 500;
         font-size: 1rem;
         font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
     }
-    .header-btn{
-        top: 310px;
-        left: 140px;
+
+    .header-btn {
+        top: 80%;
+        margin-top: 30px;
         width: 100px;
         height: 30px !important;
         padding-bottom: 20px !important;
@@ -75,27 +159,61 @@ body{
         font-size: small !important;
         font-weight: 500 !important;
     }
-    
+
 }
+
 @media screen and (min-width:992px) {
-    
-    .header-heading{
-        top: 350px;
-        left: 230px;
+    .island {
+        width: 90vw;
+        height: 75px;
+        background-color: white;
+        top: 120px;
+        border-radius: 15px;
+    }
+    .destination-div1 {
+        font-size: 0.8em;
+        padding-top: 5px;
+    }
+
+    .destination-div2 {
+        font-size: 0.8em;
+        padding-left: 40px;
+    }
+
+    .dropdown-text {
+        font-size: x-large !important;
+        font-weight: 500 !important;
+    }
+
+    .date-bar {
+        width: 250px !important;
+        font-size: x-large !important;
+        border-style: none !important;
+        font-weight: 500 !important;
+    }
+
+    .island-btn-dark {
+        display: inline !important;
+        width: 300px;
+        height: 50px;
+        border-radius: 100px !important;
+    }
+
+    .header-heading {
+        top: 45%;
+        left: 15%;
         font-weight: 700;
         font-size: var(--main-heading-size);
         font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
     }
-    .header-text{
-        top: 420px;
-        left: 230px;
+
+    .header-text {
         font-weight: 500;
         font-size: 1rem;
         font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
     }
-    .header-btn{
-        top: 490px;
-        left: 230px;
+
+    .header-btn {
         width: 130px;
         height: 35px !important;
         padding-bottom: 20px !important;
@@ -103,45 +221,112 @@ body{
         font-size: large !important;
         font-weight: 500 !important;
     }
-    
+
+}
+
+@media screen and (min-width:1200px) {
+    .island {
+        width: 80vw;
+        height: 85px;
+        background-color: white;
+        top: 120px;
+        border-radius: 15px;
+    }
+
+    .destination-div1 {
+        font-size: 0.8em;
+        padding-top: 5px;
+    }
+
+    .destination-div2 {
+        font-size: 0.8em;
+        padding-left: 40px;
+    }
+
+    .dropdown-text {
+        font-size: x-large !important;
+        font-weight: 500 !important;
+    }
+
+    .date-bar {
+        width: 250px !important;
+        font-size: x-large !important;
+        border-style: none !important;
+        font-weight: 500 !important;
+    }
+
+    .island-btn-dark {
+        width: 300px;
+        height: 50px;
+        border-radius: 100px !important;
+    }
+
+    .header-heading {
+        top: 45%;
+        left: 15%;
+        font-weight: 700;
+        font-size: var(--main-heading-size);
+        font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    }
+
+    .header-text {
+        font-weight: 500;
+        font-size: 1rem;
+        font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    }
+
+    .header-btn {
+        width: 130px;
+        height: 35px !important;
+        padding-bottom: 20px !important;
+        padding-top: 2px !important;
+        font-size: large !important;
+        font-weight: 500 !important;
+    }
+
 }
 
 /* for hero image */
 
 @media screen {
-    .header-main{
+    .header-main {
         width: 100vw;
         height: 100vh;
     }
-    .hero-img{
+
+    .hero-img {
         width: 100%;
         height: 100%;
         object-fit: cover;
         object-position: center;
     }
 }
+
 @media screen and (min-width:768px) {
-    .header-main{
+    .header-main {
         width: 100vw;
-        height: 70vh;
+        height: auto;
     }
-    .hero-img{
+
+    .hero-img {
         width: 100%;
-        height: 70vh;
+        height: 50vw;
         object-fit: cover;
         object-position: center;
     }
 }
+
 @media screen and (min-width:992px) {
-    .header-main{
+    .header-main {
         width: 100vw;
-        height: 100vh;
+        height: auto;
     }
-    .hero-img{
+
+    .hero-img {
         width: 100%;
-        height: 100vh;
+        height: 50vw;
         object-fit: cover;
         object-position: center;
-        
+
     }
 }
