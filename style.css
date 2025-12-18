@@ -5,6 +5,7 @@
 .header-main {
     background-color: aqua;
     position: relative;
+    overflow-x: hidden;
 }
 
 .bar-col {
@@ -28,10 +29,6 @@
     top: 120px;
 }
 
-body {
-    overflow-x: hidden;
-}
-
 /* for hero text */
 
 
@@ -42,6 +39,7 @@ body {
         background-color: white;
         top: 120px;
         border-radius: 15px;
+        overflow-x: hidden;
     }
     .destination-div1 {
         font-size: 0.8em;
