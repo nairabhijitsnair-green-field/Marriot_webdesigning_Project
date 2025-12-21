@@ -52,13 +52,13 @@
     }
 
     .dropdown-text {
-        font-size: large !important;
+        font-size: 4vw !important;
         font-weight: 500 !important;
     }
 
     .date-bar {
         width: 200px !important;
-        font-size: large !important;
+        font-size: 4vw !important;
         border-style: none !important;
         font-weight: 500 !important;
     }
