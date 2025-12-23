@@ -17,3 +17,18 @@ linkDiv.forEach(link =>{
             targetcontent.classList.add('active')
     });
 })
+
+//island sticky
+const mainIsland = document.querySelector('.main-island');
+
+const stickyPoint = 120; 
+
+window.addEventListener('scroll', function() {
+    if (window.scrollY >= stickyPoint) {
+        mainIsland.classList.add('sticky');
+        mainIsland.classList.remove('position-absolute');
+    } else {
+        mainIsland.classList.remove('sticky');
+        mainIsland.classList.add('position-absolute');
+    }
+});

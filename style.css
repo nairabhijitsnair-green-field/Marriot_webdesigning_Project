@@ -1,3 +1,6 @@
+*{
+    margin: 0;
+}
 :root {
     --main-heading-size: 2.5rem;
 }
@@ -28,6 +31,10 @@
     width: 100%;
     top: 120px;
 }
+.stick{
+    position: sticky;
+    top: 0;
+}
 
 /* for hero text */
 
@@ -40,6 +47,7 @@
         top: 120px;
         border-radius: 15px;
         overflow-x: hidden;
+        padding-left: 45px;
     }
     .destination-div1 {
         font-size: 0.8em;
@@ -68,7 +76,7 @@
     }
 
     .header-heading {
-        top: 80%;
+        top: 65%;
         left: 8%;
         font-weight: 700;
         font-size: 2.2rem;
@@ -84,7 +92,7 @@
     }
 
     .header-btn {
-        margin-top: 15px;
+        margin-top: 25px;
         width: 100px;
         height: 30px !important;
         padding-bottom: 20px !important;
@@ -94,6 +102,41 @@
     }
 
 }
+@media screen and (min-width:576px){
+    .island {
+        width: 95vw;
+        height: 75px;
+        background-color: white;
+        top: 120px;
+        border-radius: 15px;
+        overflow-x: hidden;
+        padding-left: 0px;
+    }
+    
+    .dropdown-text {
+        font-size: 2.5vw !important;
+        font-weight: 500 !important;
+    }
+
+    .date-bar {
+        width: 200px !important;
+        font-size: 2.5vw !important;
+        border-style: none !important;
+        font-weight: 500 !important;
+    }
+}
+
+.main-island.sticky {
+    position: fixed !important;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 1050 !important;
+    padding: 10px 0;
+    background-color: white;
+    animation: slideDown 0.3s ease; 
+}
+
 
 @media screen and (min-width:768px) {
     .island {
@@ -192,7 +235,7 @@
 
     .island-btn-dark {
         display: inline !important;
-        width: 300px;
+        width: 250px;
         height: 50px;
         border-radius: 100px !important;
     }
@@ -326,5 +369,78 @@
         object-fit: cover;
         object-position: center;
 
+    }
+}
+/* middle box */
+.middle-box {
+    background-color: white;
+    height: 120px; 
+    overflow-x: auto; 
+    overflow-y: hidden; 
+}
+
+/* footer */
+
+.custom-footer {
+    background-color: #1c1c1c; 
+    font-family: Arial, sans-serif;
+}
+
+.footer-heading {
+    font-size: 1.25rem;
+    font-weight: 500;
+    margin-bottom: 1.2rem;
+}
+
+.custom-footer ul li {
+    margin-bottom: 8px;
+}
+
+.custom-footer ul li a {
+    color: #ccc; 
+    text-decoration: none;
+    font-size: 0.85rem;
+    transition: color 0.2s;
+}
+
+.custom-footer ul li a:hover {
+    color: white;
+    text-decoration: underline;
+}
+
+.social-icons a {
+    color: white;
+    font-size: 1.4rem;
+    margin-right: 20px;
+    text-decoration: none;
+}
+
+.copyright-text, .debug-text {
+    font-size: 0.75rem;
+    color: #aaa;
+}
+
+.debug-text {
+    border-top: 1px solid #333;
+    padding-top: 10px;
+}
+
+
+.clickable-section:hover {
+    cursor: pointer;
+    opacity: 0.8;
+}
+
+
+@media (max-width: 592px) {
+    .middle-box h2 {
+        font-size: 14px !important;
+    }
+    .middle-box p {
+        font-size: 10px !important;
+    }
+    
+    .box-img img {
+        width: 70px !important;
     }
 }

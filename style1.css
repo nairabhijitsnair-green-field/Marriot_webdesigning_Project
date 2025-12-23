@@ -53,6 +53,10 @@ hr {
 .content-fixed-div.active {
     display: block;
 }
+.hide{
+    position: relative;
+    z-index: -1;
+}
 
 body {
     margin: 0;
@@ -62,10 +66,10 @@ body {
 
 @media screen {
     .card-title-row1 {
-        padding-top: 30vw;
+        padding-top: 25vw;
     }
     .card-title-row2{
-        padding-top: 110vw;
+        padding-top: 100vw;
     }
 }
 @media screen and (min-width: 576px) {
@@ -78,7 +82,7 @@ body {
 }
 @media screen and (min-width: 768px) {
     .card-title-row1 {
-        padding-top: 30vw;
+        padding-top: 14vw;
     }
     .card-title-row2{
         padding-top: 53vw;
@@ -89,7 +93,7 @@ body {
         padding-top: 17vw;
     }
     .card-title-row2{
-        padding-top: 58vw;
+        padding-top: 32vw;
     }
 }
 @media screen and (min-width: 1200px) {
@@ -97,10 +101,10 @@ body {
         padding-top: 18vw;
     }
     .card-title-row2{
-        padding-top: 37vw;
+        padding-top: 35vw;
     }
     .card-row2{
-        width: 29.5vw !important;
+        width: 29vw !important;
     }
 }
 @media screen and (min-width: 1400px) {
@@ -108,9 +112,9 @@ body {
         padding-top: 15vw;
     }
     .card-title-row2{
-        padding-top: 30vw;
+        padding-top: 28vw;
     }
     .card-row2{
-        width: 24.05vw !important;
+        width: 23.8vw !important;
     }
 }
